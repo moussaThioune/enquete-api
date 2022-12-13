@@ -23,8 +23,8 @@ public interface PostRepository extends JpaRepository<Post, Long> {
 //
 //
 
-//    @Query("select p from  Post p where p.name like :x")
-//     Page<Post> postMc(@Param("x") String mc, Pageable p);
+    @Query("select p from  Post p where p.name like :x")
+     Page<Post> postMc(@Param("x") String mc, Pageable p);
 
 
 //    Page<Post> findByCategoryPost(CategoryPost categoryPost, Pageable pageable);

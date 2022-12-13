@@ -94,10 +94,6 @@ public class PostController {
     }
 
 
-
-
-
-
      @DeleteMapping("/post/{id}")
      public String deletePostById(@PathVariable("id") Long id)
     {
