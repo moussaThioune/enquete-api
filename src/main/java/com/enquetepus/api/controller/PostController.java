@@ -80,8 +80,6 @@ public class PostController {
         return postService.updatePost(post, id);
     }
 
-
-
     @GetMapping("/search")
     public List<Post> getPostName(@RequestParam String name) {
         return postRepository.findPostByName(name);
@@ -93,15 +91,12 @@ public class PostController {
 
     }
 
-
      @DeleteMapping("/post/{id}")
      public String deletePostById(@PathVariable("id") Long id)
     {
          postService.deletePostById(id);
          return "Deleted Successfully";
      }
-
-
 
 
 }
