@@ -12,7 +12,8 @@ import java.util.List;
 
 @Entity
 @Data
-@AllArgsConstructor@NoArgsConstructor
+@AllArgsConstructor
+@NoArgsConstructor
 @Builder
 public class CategoryPost {
     @Id
